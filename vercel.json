@@ -1,9 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "destination": "https://only.fozowo.com/",
-      "permanent": true
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<sub>.+)\\.only\\.fozowo\\.com"
+        }
+      ],
+      "destination": "https://only.fozowo.com/$1",
+      "permanent": false
     }
   ]
 }
