@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://only.fozowo.com/",
+      "permanent": true
+    }
+  ]
+}
