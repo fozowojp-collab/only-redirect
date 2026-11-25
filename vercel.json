@@ -1,8 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/:path*",
-      "destination": "https://only.fozowo.com/",
+      "source": "/(.*)",
+      "destination": "https://only.fozowo.com/$1",
       "permanent": true
     }
   ]
